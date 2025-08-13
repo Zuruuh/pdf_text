@@ -11,7 +11,9 @@ description = "PDF text extraction"
 
 [dependencies]
 pdf = { git = "https://github.com/pdf-rs/pdf", features = ["cache"] }
-pdf_render = { git = "https://github.com/pdf-rs/pdf_render" }
+pdf_render = { git = "https://github.com/pdf-rs/pdf_render", features = [
+  "embed",
+] }
 font = { git = "https://github.com/pdf-rs/font" }
 itertools = "*"
 log = "*"
